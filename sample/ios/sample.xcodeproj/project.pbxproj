@@ -20,6 +20,7 @@
 		6DA61D6E84ACAEDE2AA70E4E /* libPods-sample-sampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4696B570B77193AB2CEA7BA2 /* libPods-sample-sampleTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8382E459FFFB283CD7FC031B /* libPods-sample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D6A1F7CCA5411D195FFBD0 /* libPods-sample.a */; };
+		1CC1B5502CCE46B291C44251 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECE08070D2B1442086224CC2 /* Ionicons.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F31BA7FE20770FCBF7159B22 /* libPods-sample-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sample-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECE08070D2B1442086224CC2 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-ionicons/fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				4D8E98BBF718FED300C79CF1 /* Pods */,
+				AE30C6E365DF49DFBDC19B1B /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -197,6 +200,15 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		AE30C6E365DF49DFBDC19B1B /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				ECE08070D2B1442086224CC2 /* Ionicons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -342,6 +354,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				1CC1B5502CCE46B291C44251 /* Ionicons.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
