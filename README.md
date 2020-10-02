@@ -1,67 +1,53 @@
 # React Native Study
 
+
 ## Setup
 
 ```
+# XCode, node.js 설치되어 있어야 함
+
 node --version
 
-# [expo cli]
-npm install -g expo-cli
-expo init expoTest
-cd expoTest/
-npm start
+# [expo cli] 여기 예제에서는 아래의 react-native만 사용
+# npm install -g expo-cli
+# expo init expoTest
+# cd expoTest/
+# npm start
 
 # [react-native cli]
 brew install watchman
 npm install -g react-native-cli
 sudo gem install cocoapods
-npx react-native init nativeTest
-npx react-native run-ios
 ```
 
-## React navigation
-- 네비게이션은 React navigation과 React native navigation이 있다.
-- React navigation이 좀 더 느리지만 더 편함, native는 iOS, Android 코드 수정 필요 등
+
+## Make Project
 
 ```
-[Installing react navigation] —> https://reactnative.dev/docs/navigation#usage
-npm install @react-navigation/native @react-navigation/stack
+# 프로젝트 초기화
+cd <WORKSPACE_PATH>
+npx react-native init <PROJECT_NAME>
+cd <WORKSPACE_PATH>/<PROJECT_NAME>
 
-# [expo cli]
-expo install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+# 탭을 사용하려는 경우 사전 설치
+npm install @react-navigation/native react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
 
-# [react native cli]
-npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
-
-# Navigation
-npm install @react-navigation/native
-# [expo cli]
-expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
-
-# [react native cli]
-npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
-
-# [tab navigation] —> https://reactnavigation.org/docs/tab-based-navigation
+# Bottom 탭을 사용하려는 경우 설치
 npm install @react-navigation/bottom-tabs
 
-# [drawer navigation] —> https://reactnavigation.org/docs/drawer-based-navigation
+# Drawer 탭을 사용하려는 경우 설치
 npm install @react-navigation/drawer
 
-# Icons —> https://www.npmjs.com/package/react-native-ionicons
+# 아이콘을 사용하려는 경우 설치
 npm install react-native-ionicons
-# ios/Info.plist에 폰트 추가, 폰트 ios/android에 링크해줌
-# react 6.x 에서는 안해도 된다고 함
-npx react-native link react-native-ionicons
-# ios에 폰트 설치해줌
-cd ios && pod install && cd ..
-```
 
-## 라이브러리 변경되면 pod install 해줘야 함
-
-```
+# iOS에 pod install 실행
 npx pod-install ios
+```
 
-# or
 
-cd ios && pod install && cd ..
+## Run
+
+```
+npx react-native run-ios
 ```
